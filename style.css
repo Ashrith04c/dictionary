@@ -1,34 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
+/* style.css */
 
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ /* font-family: 'Arial', sans-serif;*/
 }
-.body{
-    width: 100%;
-    height: 100%;
+
+body {
+  background-color: #f8f8f8;
 }
-.left img{
-     width: 101px;
-     height: 65px;
+
+/* Flex utility */
+.flex {
+  display: flex;
+  align-items: center;
 }
+
+/* Navbar styles */
+nav {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left section (Logo + menu) */
 .left {
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 20px;
 }
-ul.flex {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-}
-ul.flex li {
-      cursor: pointer;
-      padding: 8px 12px;
-    }
 
-    ul.flex li:hover {
-      background-color: #f0f0f0;
-      border-radius: 5px;
-    }
+.left img {
+  width: 50px;
+  height: auto;
+}
+
+.left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.left ul li {
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.left ul li:hover {
+  color: #ff3f6c;
+}
+
+.rightflex {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#searchImput {
+  width: 750px;
+  padding: 18px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#searchImput:focus {
+  border-color: #ff3f6c;
+  box-shadow: 0 0 5px rgba(255, 63, 108, 0.3);
+  outline: none;
+}
+
+/* Icons/sections (profile, wishlist, bag) */
+.profile,
+.Wishlist,
+.Bag {
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+}
+
+.profile:hover,
+.Wishlist:hover,
+.Bag:hover {
+  color: #ff3f6c;
+}
