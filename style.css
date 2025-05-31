@@ -19,13 +19,22 @@ body {
 }
 
 /* Navbar styles */
+/* Fixed navbar styles */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #ffffff;
   padding: 10px 30px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   justify-content: space-between;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
 }
+
 
 /* Left section (Logo + menu) */
 .left {
@@ -33,7 +42,7 @@ nav {
 }
 
 .left img {
-  width: 50px;
+  width: 80px;
   height: auto;
 }
 
@@ -90,4 +99,17 @@ nav {
 .Wishlist:hover,
 .Bag:hover {
   color: #ff3f6c;
+}
+.cont img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.contai img{
+   width: 97%;
+    height: auto;
+    display: block;
+}
+.contai{
+      background :color;
 }
